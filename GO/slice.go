@@ -27,4 +27,6 @@ func main() {
 	for _,name := range loons {
 		fmt.Printf(" %v \n",name)
 	}
+	loons  =  append(loons, "new-elem")
+	fmt.Println(loons)
 }
