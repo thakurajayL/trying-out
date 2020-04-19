@@ -1,0 +1,10 @@
+2020/04/19 14:16:33 error : open /unknownpath/config.yaml: no such file or directory
+Can't open configuration file
+main.readConfig
+	/root/trying-out/GO/file.go:17
+main.main
+	/root/trying-out/GO/file.go:38
+runtime.main
+	/usr/lib/go-1.10/src/runtime/proc.go:198
+runtime.goexit
+	/usr/lib/go-1.10/src/runtime/asm_amd64.s:2361

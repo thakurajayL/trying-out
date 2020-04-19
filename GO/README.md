@@ -8,3 +8,8 @@ go version
 Write a program and use following command to run it. 
 go run file.go 
 go build file.go  << This generates binary file which can be run  
+
+go get github.com/pkg/errors
+
+Highlights
+	- Go has garbage collector 
