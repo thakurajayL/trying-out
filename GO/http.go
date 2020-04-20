@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"io"
+	"os"
 )
 
 func contentType(url string) (string, error) {
@@ -10,7 +12,7 @@ func contentType(url string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-
+	io.Copy(os.Stdout, resp.Body)
 	defer resp.Body.Close()
 	ctype := resp.Header.Get("Content-Type")
 	if ctype == "" {
