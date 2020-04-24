@@ -1,4 +1,5 @@
 #include<iostream>
+#include<exception>
 
 class Base {
 	virtual void print() {
@@ -34,5 +35,12 @@ int main()
 	} else {
 		std::cout<<"dynamic cast success Base*->Derived2*"<<std::endl;
 	}
+	try {
+		Derived2 &r2 = dynamic_cast<Derived2 &>(d1);
+		std::cout<<"Success in casting"<<std::endl;
+	}
+	catch (std::exception &e) {
+		std::cout<<e.what()<<std::endl;
+	}
+	return 0; 
 }
-
