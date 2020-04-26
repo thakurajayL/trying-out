@@ -2,8 +2,9 @@
 using namespace std;
 class first
 {
-	int age;
-	char name[10];
+	private:
+		int age;
+		char name[10];
 	public:
 		void getdata(void);
 		void display(void);
