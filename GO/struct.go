@@ -18,7 +18,7 @@ func (t Student)  getage()  int  {
 func main() {
 	s1 := Student{"Ajay", 12, 5, true}
 	fmt.Println(s1)
-	fmt.Printf("%+v\n",s1) // i lobe it ..it prints field:value pattern
+	fmt.Printf("%+v\n",s1) // i love it ..it prints field:value pattern
 	fmt.Println(s1.name)
 
 	s2 := Student{
